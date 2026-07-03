@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <!-- Estilos para el contraste blanco sobre fondo oscuro -->
+  <style>
+    .lrad-bg { fill: #0f1012; }
+    .lrad-block { stroke: #ffffff; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+    .lrad-glow-effect { stroke: #ffffff; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; fill: none; opacity: 0.15; filter: blur(3px); }
+    .lrad-grid { stroke: #1c1d21; stroke-width: 1.5; }
+  </style>
+
+  <!-- 1. El contenedor circular oscuro principal -->
+  <circle class="lrad-bg" cx="60" cy="60" r="56" />
+
+  <!-- 2. Grilla técnica interior -->
+  <g class="lrad-grid">
+    <line x1="25" y1="45" x2="95" y2="45" />
+    <line x1="25" y1="60" x2="95" y2="60" />
+    <line x1="25" y1="75" x2="95" y2="75" />
+    <line x1="45" y1="25" x2="45" y2="95" />
+    <line x1="60" y1="25" x2="60" y2="95" />
+    <line x1="80" y1="25" x2="80" y2="95" />
+  </g>
+
+  <!-- 3. Capa de brillo trasera (Glow blanco) -->
+  <g class="lrad-glow-effect">
+    <path d="M 35,35 L 60,20 L 85,35 L 85,75 L 60,95 L 35,75 Z" />
+    <path d="M 35,35 L 60,50 L 85,35" />
+    <line x1="60" y1="50" x2="60" y2="95" />
+    <path d="M 45,55 L 60,45 L 75,55" />
+  </g>
+
+  <!-- 4. Trazado de precisión en blanco puro -->
+  <g class="lrad-block">
+    <!-- Estructura del cubo isométrico -->
+    <path d="M 35,35 L 60,20 L 85,35 L 85,75 L 60,95 L 35,75 Z" />
+    <!-- Líneas de dimensión interna -->
+    <path d="M 35,35 L 60,50 L 85,35" />
+    <line x1="60" y1="50" x2="60" y2="95" />
+    <!-- El prompt de código central -->
+    <path d="M 45,55 L 60,45 L 75,55" />
+  </g>
+</svg>
