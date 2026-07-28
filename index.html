@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Rosales | Programador, SysAdmin & Ciberseguridad</title>
+    <title>Luis Rosales | Full-Stack Developer & SaaS/IoT Architect</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter & JetBrains Mono -->
@@ -14,9 +14,8 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Favicon -->
-     <!-- Favicon personalizado usando el logo SVG -->
-<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <!-- Favicon personalizado -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
     <script>
         tailwind.config = {
             theme: {
@@ -27,11 +26,11 @@
                     },
                     colors: {
                         carbon: {
-                            bg: '#121316',       /* Fondo principal de image_3e4b9e.png */
-                            surface: '#1c1d21',  /* Tarjetas oscuras */
-                            contrast: '#d9c5b2', /* Tarjeta clara de realce (tono arena/café suave) */
-                            border: '#28292e',   /* Líneas de separación sutiles */
-                            amber: '#f5b82e',    /* Dorado/Ámbar premium de los botones */
+                            bg: '#121316',
+                            surface: '#1c1d21',
+                            contrast: '#d9c5b2',
+                            border: '#28292e',
+                            amber: '#f5b82e',
                             textMuted: '#989aa6'
                         }
                     }
@@ -50,13 +49,13 @@
     <nav class="w-full bg-carbon-bg/90 backdrop-blur-md border-b border-carbon-border fixed top-0 left-0 z-50 px-6 py-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <a href="#hero" class="flex items-center space-x-3 font-mono text-sm tracking-wider font-bold text-white">
-                <!-- LOGO ASSET -->
-                <img src="assets/logo.svg" alt="[>]" class="w-5 h-5 onerror-fallback text-carbon-amber" onerror="this.style.display='none'">
+                <img src="assets/logo.svg" alt="[>]" class="w-5 h-5 text-carbon-amber" onerror="this.style.display='none'">
                 <span>LUIS ROSALES</span>
             </a>
             <div class="hidden md:flex space-x-8 text-xs font-mono tracking-wider uppercase text-carbon-textMuted">
                 <a href="#projects" class="hover:text-white transition-colors">Proyectos</a>
                 <a href="#skills" class="hover:text-white transition-colors">Habilidades</a>
+                <a href="#fieldwork" class="hover:text-white transition-colors">Infraestructura</a>
                 <a href="#experience" class="hover:text-white transition-colors">Historial</a>
             </div>
             <div>
@@ -70,19 +69,19 @@
     <!-- CONTENEDOR PRINCIPAL -->
     <main class="pt-20 max-w-6xl mx-auto px-6 lg:px-8 overflow-hidden">
 
-        <!-- 2. HERO DUAL DE ALTO IMPACTO (Inspirado en image_3e4b9e.png) -->
+        <!-- 2. HERO -->
         <section id="hero" class="min-h-[85vh] grid grid-cols-1 lg:grid-cols-12 gap-12 items-center py-12 wix-line-premium">
             <div class="lg:col-span-7 space-y-6" data-aos="fade-right" data-aos-duration="1000">
                 <div class="inline-flex items-center space-x-2 text-xs font-mono text-carbon-amber">
                     <span>[PIURA, PERÚ]</span>
                     <span class="text-neutral-700">//</span>
-                    <span>DISCIPLINA OPERATIVA</span>
+                    <span>FULL-STACK & DEVOPS ENGINEER</span>
                 </div>
                 <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-white leading-none">
-                    Optimización, Infraestructura & Ciberseguridad.
+                    Construyo, despliego y aseguro aplicaciones web de extremo a extremo.
                 </h1>
                 <p class="text-base sm:text-lg text-carbon-textMuted font-light leading-relaxed">
-                    Administrador de sistemas avanzado en entornos Linux CLI y automatizador backend. Con trasfondo en las fuerzas armadas, aplico una metodología estricta y lógica para blindar infraestructura de red y estructurar procesos críticos de software.
+                    Desarrollador Full-Stack especializado en la creación de plataformas SaaS híbridas y arquitecturas acopladas con Next.js, React, Payload CMS y PostgreSQL. Complemento la programación con administración de sistemas Linux (Arch/Kali) e infraestructura en contenedores Docker.
                 </p>
                 <div class="flex flex-wrap gap-4 pt-2">
                     <a href="#projects" class="bg-carbon-amber text-black font-mono text-xs uppercase tracking-widest px-6 py-3.5 font-bold hover:bg-amber-400 transition-all">
@@ -93,7 +92,6 @@
                     </a>
                 </div>
             </div>
-            <!-- HERO VISUAL ASSET -->
             <div class="lg:col-span-5" data-aos="fade-left" data-aos-duration="1000">
                 <div class="relative border border-carbon-border bg-carbon-surface/30 p-2 rounded-sm overflow-hidden group">
                     <img src="assets/hero-visual.webp" alt="SysAdmin CLI Visual" class="w-full h-[400px] object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700" onerror="this.src='https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=800';">
@@ -102,7 +100,7 @@
             </div>
         </section>
 
-        <!-- 3. GRID ASIMÉTRICO DE PROYECTOS (Mecánica de image_3e4b9e.png + GitHub API) -->
+        <!-- 3. PROYECTOS -->
         <section id="projects" class="py-20 space-y-12 wix-line-premium scroll-mt-20">
             <div data-aos="fade-up" class="flex flex-col md:flex-row md:items-baseline justify-between gap-4">
                 <div class="space-y-2">
@@ -112,21 +110,17 @@
                 <div class="text-xs font-mono text-carbon-textMuted">&gt;_ API estatus: <span class="text-emerald-500">ONLINE</span></div>
             </div>
 
-            <!-- Contenedor del Grid -->
             <div id="github-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
-                
-                <!-- TARJETA DESTACADA (CONTRALTO CLARO): TU PROYECTO INSIGNIA -->
                 <div data-aos="fade-up" class="bg-carbon-contrast text-black p-8 rounded-sm flex flex-col justify-between space-y-6 md:col-span-1">
                     <div class="space-y-4">
                         <span class="font-mono text-xs font-bold tracking-widest text-neutral-800">/ 01 . PROYECTO INSIGNIA</span>
-                        <h4 class="text-2xl font-bold tracking-tight leading-tight">Orquestador Hardened de Infraestructura Linux</h4>
+                        <h4 class="text-2xl font-bold tracking-tight leading-tight">AcuariusAI — SaaS Híbrido</h4>
                         <p class="text-xs text-neutral-800 leading-relaxed font-normal">
-                            Set automatizado de scripts en Bash para auditoría de puertos, endurecimiento de kernels y despliegue masivo de políticas de seguridad en Arch/Kali de forma desatendida.
+                            Monolito moderno desacoplado (Next.js, Payload CMS, PostgreSQL) para e-commerce de hardware, paneles de control para clientes, soporte técnico y telemetría IoT en tiempo real.
                         </p>
                     </div>
-                    <!-- IMAGEN PROYECTO INSIGNIA -->
                     <div class="my-2 border border-black/10 rounded-sm overflow-hidden">
-                        <img src="assets/proyecto-insignia.webp" alt="Hardening CLI" class="w-full h-32 object-cover filter grayscale" onerror="this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=500';">
+                        <img src="assets/proyecto-insignia.webp" alt="AcuariusAI Platform" class="w-full h-32 object-cover filter grayscale" onerror="this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=500';">
                     </div>
                     <div>
                         <a href="https://github.com/Alberth-23" target="_blank" class="bg-black text-white font-mono text-xs uppercase tracking-wider px-4 py-3 block text-center font-bold hover:bg-neutral-900 transition-all">
@@ -135,16 +129,13 @@
                     </div>
                 </div>
 
-                <!-- CARGA DINÁMICA DE REPOSITORIOS GITHUB (Tarjetas oscuras como en image_3e4b9e.png) -->
-                <!-- El script inyectará automáticamente los repositorios de Alberth-23 en las dos columnas restantes -->
                 <div id="dynamic-repos-area" class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="text-xs font-mono text-carbon-textMuted animate-pulse p-6">&gt; Consultando submódulos de Alberth-23...</div>
+                    <div class="text-xs font-mono text-carbon-textMuted animate-pulse p-6">&gt; Consultando repositorios destacados (Starred) de Alberth-23...</div>
                 </div>
-
             </div>
         </section>
 
-        <!-- 4. MATRIZ DE COMPETENCIAS -->
+        <!-- 4. COMPETENCIAS -->
         <section id="skills" class="py-20 space-y-12 wix-line-premium">
             <div data-aos="fade-up" class="grid grid-cols-1 md:grid-cols-3 gap-4 items-baseline">
                 <h2 class="text-xs font-mono tracking-widest uppercase text-carbon-amber">02 // CORE MATRIZ</h2>
@@ -153,24 +144,93 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
                 <div data-aos="fade-up" class="bg-carbon-surface/50 border border-carbon-border p-6 space-y-3">
-                    <div class="text-carbon-amber"><i data-lucide="terminal" class="w-5 h-5"></i></div>
-                    <h4 class="text-lg font-bold text-white">Sistemas Operativos CLI</h4>
-                    <p class="text-xs text-carbon-textMuted leading-relaxed font-light">Especialista en entornos GNU/Linux puros, resolución avanzada de dependencias de empaquetado, optimización extrema de recursos del kernel y flasheo crítico.</p>
+                    <div class="text-carbon-amber"><i data-lucide="code-2" class="w-5 h-5"></i></div>
+                    <h4 class="text-lg font-bold text-white">Desarrollo Full-Stack</h4>
+                    <p class="text-xs text-carbon-textMuted leading-relaxed font-light">Aplicaciones web modernas con Next.js, React, JavaScript y Tailwind CSS en el frontend; respaldadas por Node.js, Payload CMS y PostgreSQL en el backend.</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="100" class="bg-carbon-surface/50 border border-carbon-border p-6 space-y-3">
-                    <div class="text-carbon-amber"><i data-lucide="shield-check" class="w-5 h-5"></i></div>
-                    <h4 class="text-lg font-bold text-white">Auditoría de Redes</h4>
-                    <p class="text-sm text-carbon-textMuted leading-relaxed font-light">Análisis táctico de espectros inalámbricos, detección perimetral de vectores vulnerables y uso intensivo de suites analíticas en Kali Linux.</p>
+                    <div class="text-carbon-amber"><i data-lucide="terminal" class="w-5 h-5"></i></div>
+                    <h4 class="text-lg font-bold text-white">Infraestructura & DevOps</h4>
+                    <p class="text-xs text-carbon-textMuted leading-relaxed font-light">Despliegue con Docker, administración de entornos Linux (Arch, Kali), optimización de bases de datos relacionales y mantenimiento de servidores local/cloud.</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="200" class="bg-carbon-surface/50 border border-carbon-border p-6 space-y-3">
                     <div class="text-carbon-amber"><i data-lucide="cpu" class="w-5 h-5"></i></div>
-                    <h4 class="text-lg font-bold text-white">Automatización Comercial</h4>
-                    <p class="text-sm text-carbon-textMuted leading-relaxed font-light">Estructuración inteligente de backend enfocado a e-commerce, despliegue lógico de embudos de conversión y analítica avanzada con Google Ads técnico.</p>
+                    <h4 class="text-lg font-bold text-white">Sistemas IoT & Automatización</h4>
+                    <p class="text-xs text-carbon-textMuted leading-relaxed font-light">Captura de telemetría de sensores, integración de APIs RESTful, paneles de gestión de clientes y flujos automatizados de e-commerce.</p>
                 </div>
             </div>
         </section>
 
-        <!-- 5. HISTORIAL / TIMELINE -->
+        <!-- 4.5 INFRAESTRUCTURA EN CAMPO -->
+        <section id="fieldwork" class="py-20 space-y-12 wix-line-premium">
+            <div data-aos="fade-up" class="grid grid-cols-1 md:grid-cols-3 gap-4 items-baseline">
+                <h2 class="text-xs font-mono tracking-widest uppercase text-carbon-amber">02.5 // EVIDENCIA</h2>
+                <h3 class="text-3xl font-bold text-white md:col-span-2 tracking-tight">Infraestructura en Campo</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+                
+                <!-- Tarjeta 1: INFORMÁTICA -->
+                <div data-aos="fade-up" class="bg-carbon-surface/50 border border-carbon-border rounded-sm overflow-hidden group">
+                    <div class="overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop" 
+                            onerror="this.onerror=null; this.src='https://picsum.photos/800/600?tech=1';"
+                            alt="Arquitectura e Infraestructura IoT" 
+                            class="w-full h-48 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300" 
+                        />
+                    </div>
+                    <div class="p-5 space-y-1">
+                        <div class="text-[10px] font-mono text-carbon-amber font-bold">INFORMÁTICA</div>
+                        <h4 class="text-sm font-bold text-white">Plataforma SaaS & Arquitectura IoT / AcuariusAI</h4>
+                        <p class="text-xs text-carbon-textMuted font-light leading-relaxed">
+                            Diseño e implementación de un monolito moderno desacoplado (Next.js + Payload CMS + PostgreSQL) con integración de telemetría IoT y gestión de base de datos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: ADMINISTRACIÓN -->
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-carbon-surface/50 border border-carbon-border rounded-sm overflow-hidden group">
+                    <div class="overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop" 
+                            onerror="this.onerror=null; this.src='https://picsum.photos/800/600?tech=2';"
+                            alt="Gestión de Inventario y Comercio Electrónico" 
+                            class="w-full h-48 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300" 
+                        />
+                    </div>
+                    <div class="p-5 space-y-1">
+                        <div class="text-[10px] font-mono text-carbon-amber font-bold">ADMINISTRACIÓN</div>
+                        <h4 class="text-sm font-bold text-white">Gestión E-Commerce & Control de Inventarios / Shopify & SaaS</h4>
+                        <p class="text-xs text-carbon-textMuted font-light leading-relaxed">
+                            Administración de catálogo automatizado, control de stock en tiempo real y optimización de flujos de conversión de ventas mediante integración con canales digitales.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: DISEÑO -->
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-carbon-surface/50 border border-carbon-border rounded-sm overflow-hidden group">
+                    <div class="overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&auto=format&fit=crop" 
+                            onerror="this.onerror=null; this.src='https://picsum.photos/800/600?tech=3';"
+                            alt="Diseño de Interfaces Web y CMS" 
+                            class="w-full h-48 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-300" 
+                        />
+                    </div>
+                    <div class="p-5 space-y-1">
+                        <div class="text-[10px] font-mono text-carbon-amber font-bold">DISEÑO</div>
+                        <h4 class="text-sm font-bold text-white">Diseño de Interfaces & Sistemas CMS / Tailwind & Payload</h4>
+                        <p class="text-xs text-carbon-textMuted font-light leading-relaxed">
+                            Desarrollo de interfaces dinámicas, responsivas y modulares orientadas a la experiencia de usuario (UX/UI) para plataformas web y paneles de control administrativos.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. HISTORIAL -->
         <section id="experience" class="py-20 space-y-12 wix-line-premium">
             <div data-aos="fade-up" class="grid grid-cols-1 md:grid-cols-3 gap-4 items-baseline">
                 <h2 class="text-xs font-mono tracking-widest uppercase text-carbon-amber">03 // HISTORIAL</h2>
@@ -181,26 +241,26 @@
                 <div data-aos="fade-up" class="grid grid-cols-1 md:grid-cols-12 gap-4 border-l border-carbon-border pl-6 relative">
                     <div class="md:col-span-3 font-mono text-xs text-carbon-amber font-bold">2025 - PRESENTE</div>
                     <div class="md:col-span-9 space-y-1">
-                        <h4 class="text-lg font-bold text-white">Consultor Técnico Independiente & Automatizador</h4>
-                        <p class="text-xs text-carbon-textMuted font-light">Optimización avanzada de kernels, flasheo preciso de firmwares a nivel de fabricante y desarrollo de scripts estructurados de soporte automatizado.</p>
+                        <h4 class="text-lg font-bold text-white">Consultor Técnico Independiente & Desarrollador Full-Stack</h4>
+                        <p class="text-xs text-carbon-textMuted font-light">Desarrollo de arquitecturas web a medida, optimización de sistemas Linux, flasheo e integración de hardware/sensores IoT y automatización de procesos digitales.</p>
                     </div>
                 </div>
                 <div data-aos="fade-up" class="grid grid-cols-1 md:grid-cols-12 gap-4 border-l border-carbon-border pl-6 relative">
                     <div class="md:col-span-3 font-mono text-xs text-carbon-textMuted">2026</div>
                     <div class="md:col-span-9 space-y-1">
                         <h4 class="text-lg font-bold text-white">Líder de Proyectos Digitales — InformaticStore</h4>
-                        <p class="text-xs text-carbon-textMuted font-light">Modelado de infraestructura web de ventas y automatización integral de la gestión de licencias digitales.</p>
+                        <p class="text-xs text-carbon-textMuted font-light">Modelado de infraestructura web de ventas y automatización integral de la gestión de licencias digitales y catálogo de componentes.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 6. FOOTER Y CONTACTO TERMINAL -->
+        <!-- 6. FOOTER -->
         <section id="contact" class="py-16 text-center space-y-6">
             <h2 class="text-2xl font-bold text-white tracking-tight">Iniciar Comunicación Técnica</h2>
             <div class="flex justify-center gap-4 text-xs font-mono">
                 <a href="https://wa.me/51994749295" target="_blank" class="bg-carbon-amber text-black font-bold px-6 py-3 hover:bg-amber-400 transition-all rounded-sm">WHATSAPP DIRECTO</a>
-                <a href="mailto:rluisabad@gmail.com" class="border border-carbon-border text-white px-6 py-3 hover:border-neutral-500 transition-all rounded-sm">EMAIL CORPORATION</a>
+                <a href="mailto:rluisabad@gmail.com" class="border border-carbon-border text-white px-6 py-3 hover:border-neutral-500 transition-all rounded-sm">EMAIL DIRECTO</a>
             </div>
             <p class="text-[10px] font-mono text-carbon-textMuted pt-8">
                 &copy; 2026 LUIS ROSALES. PARADIGMA VISUAL INSPIRADO EN DISEÑO ASIMÉTRICO PREMIUM.
@@ -215,27 +275,38 @@
         AOS.init({ once: true, mirror: false });
         lucide.createIcons();
 
-        // SECCIÓN AUTOMÁTICA GITHUB DESDE LA API
         const githubUser = 'Alberth-23';
         const dynamicArea = document.getElementById('dynamic-repos-area');
 
-        fetch(`https://api.github.com/users/${githubUser}/repos?sort=updated&per_page=5`)
+        // Petición a la API de GitHub para traer proyectos con ESTRELLA (Starred)
+        fetch(`https://api.github.com/users/${githubUser}/starred?sort=created&direction=desc`)
             .then(res => res.json())
             .then(repos => {
-                dynamicArea.innerHTML = ''; // Limpiar el buffer de carga
+                dynamicArea.innerHTML = '';
                 
+                if (!repos || repos.length === 0) {
+                    dynamicArea.innerHTML = `
+                        <div class="col-span-2 text-xs font-mono text-carbon-textMuted border border-carbon-border p-6 rounded-sm">
+                            &gt; No hay repositorios destacados con estrella (⭐) en la cuenta @${githubUser}. Marca con una estrella en GitHub los proyectos que quieras mostrar aquí.
+                        </div>`;
+                    return;
+                }
+
                 let count = 0;
                 repos.forEach((repo) => {
-                    // Evitamos duplicar forks y limitamos a 4 para encajar en el grid simétrico perfecto
-                    if (!repo.fork && count < 4) {
+                    if (count < 4) {
                         count++;
-                        const lang = repo.language ? repo.language.toUpperCase() : 'SHELL';
-                        const desc = repo.description ? repo.description : 'Infraestructura de scripts activos bajo control de versiones.';
-                        
+                        const lang = repo.language ? repo.language.toUpperCase() : 'CÓDIGO';
+                        const desc = repo.description ? repo.description : 'Proyecto destacado en desarrollo y control de versiones.';
+                        const stars = repo.stargazers_count || 1;
+
                         dynamicArea.innerHTML += `
                             <div class="bg-carbon-surface/60 border border-carbon-border p-6 flex flex-col justify-between hover:border-neutral-500 transition-all duration-300 rounded-sm">
                                 <div class="space-y-2">
-                                    <div class="text-[10px] font-mono text-carbon-amber font-bold">[ ${lang} ]</div>
+                                    <div class="flex justify-between items-center text-[10px] font-mono">
+                                        <span class="text-carbon-amber font-bold">[ ${lang} ]</span>
+                                        <span class="text-amber-400 font-bold flex items-center gap-1">★ ${stars}</span>
+                                    </div>
                                     <h4 class="text-base font-bold text-white tracking-tight">${repo.name}</h4>
                                     <p class="text-xs text-carbon-textMuted font-light leading-relaxed">${desc}</p>
                                 </div>
@@ -251,7 +322,7 @@
                 lucide.createIcons();
             })
             .catch(() => {
-                dynamicArea.innerHTML = `<div class="text-xs font-mono text-red-400 p-6">&gt; Error al mapear sub-repositorios desde GitHub.</div>`;
+                dynamicArea.innerHTML = `<div class="text-xs font-mono text-red-400 p-6">&gt; Error al mapear repositorios destacados desde GitHub.</div>`;
             });
     </script>
 </body>
